@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Vizualizare serie de timp</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+	<div class="jumbotron text-center">
+		<h1>Vizualizare serie de timp</h1>
+		<p>* Varsta medie a populatiei(ani)</p>
+		<p>* Rata natalitatii(nasteri/1000 loc)</p>
+		<p>* Rata mortalitatii infantile(nr decese/1000 nasteri vii)</p>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4" align="center">
+				<h2>Afica</h3>
+					<h3>Histograma</h3>
+					<button onclick="africaVM()" type="button" class="btn btn-warning">Varsta medie</button>
+					<button onclick="africaRN()" type="button" class="btn btn-success">Rata natalitatii</button>
+					<button onclick="africaRM()" type="button" class="btn btn-danger">Rata mortalitatii</button>
+					<h3>Bubble chart</h3>
+					<button onclick="africaRNBubble()" type="button" class="btn btn-success">Rata natalitatii</button>
+					<button onclick="africaRMBubble()" type="button" class="btn btn-danger">Rata mortalitatii</button>
+					<h3>Animation data</h3>
+					<button onclick="loadAnimationData(0,2)" type="button" class="btn btn-success">Rata
+						natalitatii</button>
+					<button onclick="loadAnimationData(0,3)" type="button" class="btn btn-danger">Rata
+						mortalitatii</button>
+			</div>
+			<div class="col-sm-4" align="center">
+				<h2>Asia</h2>
+				<h3>Histograma</h3>
+				<button onclick="asiaVM()" type="button" class="btn btn-warning">Varsta medie</button>
+				<button onclick="asiaRN()" type="button" class="btn btn-success">Rata natalitatii</button>
+				<button onclick="asiaRM()" type="button" class="btn btn-danger">Rata mortalitatii</button>
+				<h3>Bubble chart</h3>
+				<button onclick="asiaRNBubble()" type="button" class="btn btn-success">Rata natalitatii</button>
+				<button onclick="asiaRMBubble()" type="button" class="btn btn-danger">Rata mortalitatii</button>
+				<h3>Animation data</h3>
+				<button onclick="loadAnimationData(1,2)" type="button" class="btn btn-success">Rata natalitatii</button>
+				<button onclick="loadAnimationData(1,3)" type="button" class="btn btn-danger">Rata mortalitatii</button>
+			</div>
+			<div class="col-sm-4" align="center">
+				<h2>Europa</h2>
+				<h3>Histograma</h3>
+				<button onclick="europaVM()" type="button" class="btn btn-warning">Varsta medie</button>
+				<button onclick="europaRN()" type="button" class="btn btn-success">Rata natalitatii</button>
+				<button onclick="europaRM()" type="button" class="btn btn-danger">Rata mortalitatii</button>
+				<h3>Bubble chart</h3>
+				<button onclick="europaRNBubble()" type="button" class="btn btn-success">Rata natalitatii</button>
+				<button onclick="europaRMBubble()" type="button" class="btn btn-danger">Rata mortalitatii</button>
+				<h3>Animation data</h3>
+				<button onclick="loadAnimationData(2,2)" type="button" class="btn btn-success">Rata natalitatii</button>
+				<button onclick="loadAnimationData(2,3)" type="button" class="btn btn-danger">Rata mortalitatii</button>
+			</div>
+
+			<div class="col-sm-4" align="center">
+				<h2>Table</h2>
+				<button onclick="drawTable()" type="button" class="btn btn-success">Tabel</button>
+			</div>
+		</div>
+	</div>
+
+	<br><br>
+
+	<div class="jumbotron text-center" align="center">
+		<button onclick="clearCanvas()" type="button" class="btn btn-default">Clear canvas</button>
+		<br>
+		<canvas id="myCanvas" width="1200" height="700" style="border:1px solid #000000;">
+			Canvas is not supported.
+		</canvas>
+	</div>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script type="text/javascript" src="3_1080_MANAILA_STEFANIA_CODRUTA.js"></script>
+</body>
+
+</html>
+</body>
+
+</html>
